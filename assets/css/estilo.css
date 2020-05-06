@@ -22,11 +22,14 @@ body{
     background-color: white;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 10px;
-    box-shadow: 1px 1px 4px #dfdfdf;    
+    box-shadow: 1px 1px 4px #dfdfdf; 
+    font-size: 14px;  
 }
 .conteudo-menu{
     width: 100%;
+    max-width: 1600px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,12 +41,58 @@ body{
     width: 100%;
 }
 .caixa-pesquisa{
-    width: 200px;
-    height: 40px;
+    max-width: 600px;
+    height: 50px;
     margin-left: 20px;
     margin-right: 20px;
-    background-color: grey;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px #dfdfdf;
 }
+.cidade-filtro, .data-filtro, .qtd-hospedes-filtro{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.data-filtro{
+    border-right: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;
+}
+
+.menu-opcoes{
+    width: 300px;
+    margin-right: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: lighter;
+}
+
+.opcoes-linguagem, .opcoes-ajuda, .opcoes-cadastrar{
+    padding-right: 15px;
+    padding-left: 15px;
+    height: 45px;   
+    margin-right: 10px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.opcoes-linguagem:hover, .opcoes-ajuda:hover{
+    background-color: #f7f7f7;
+}
+
+.opcoes-cadastrar{
+    border: 2px solid #dfdfdf;    
+}
+.opcoes-cadastrar:hover{
+    box-shadow: 1px 2px 4px #dfdfdf;    
+}
+
+
+
 .modelo{    
     display: none;
 }
@@ -62,16 +111,16 @@ body{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 .item-acomodacao{
-    max-width: 300px;
-    margin: 10px;
+    max-width: 280px;
+    margin: 20px;
 }
 
 .item-acomodacao-foto{
     width: 100%;
-    height: 200px;
+    height: 180px;
     overflow: hidden;
 }
 
